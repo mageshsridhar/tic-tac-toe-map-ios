@@ -4,6 +4,10 @@ An iPad app, built with SwiftUI, that plays tic-tac-toe while drawing your game 
 
 Tic-tac-toe has 255,168 complete games, but if you treat rotations and reflections of the board as the same, they end on only **138 distinct finished boards**: 91 X wins, 44 O wins and 3 draws. The app follows your game from the empty board towards one of those 138.
 
+<p align="center">
+  <a href="docs/demo.mp4"><img src="docs/demo.webp" width="480" alt="Demo on an iPad: playing a game while the map follows each move"></a>
+</p>
+
 ## What it does
 
 - **Play board:** a 3×3 board with pixel-art marks. It shows whose turn it is and the result of best play from the current position.
