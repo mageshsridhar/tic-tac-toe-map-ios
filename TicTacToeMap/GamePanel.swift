@@ -5,12 +5,16 @@ import SwiftUI
 struct GamePanel: View {
     @Bindable var model: GameModel
     var showsEndings = true
+    @Environment(\.colorScheme) private var scheme
 
     var body: some View {
         VStack(spacing: 18) {
             VStack(alignment: .leading, spacing: 20) {
                 StatusRow(model: model)
                 BoardGrid(model: model)
+                    // Rebuilt from scratch on a theme change: a square could otherwise occasionally keep
+                    // its old colours (likely a cached pointer-hover highlight surviving the switch).
+                    .id(scheme)
                 HStack(spacing: 12) {
                     PillButton(title: "Undo", systemImage: "arrow.uturn.backward", style: .plain) { model.undo() }
                         .keyboardShortcut("z", modifiers: .command)

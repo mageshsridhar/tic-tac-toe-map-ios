@@ -42,12 +42,10 @@ struct ContentView: View {
                         MapView(model: model)
                     }
                 } else if portrait {
-                    // Upright iPad: the game and its companions share the top row, the map gets the full width below.
+                    // Upright iPad: title, legend and credit on the left, the game on the right,
+                    // and the map across the full width below.
                     VStack(spacing: 18) {
                         HStack(alignment: .top, spacing: 22) {
-                            GamePanel(model: model, showsEndings: false)
-                                .frame(width: 380)
-                                .frame(maxHeight: .infinity, alignment: .top)
                             VStack(spacing: 18) {
                                 header
                                 // The legend grows into the column's spare room.
@@ -55,6 +53,9 @@ struct ContentView: View {
                                 MadeByCard()
                             }
                             .frame(maxHeight: .infinity)
+                            GamePanel(model: model, showsEndings: false)
+                                .frame(width: 380)
+                                .frame(maxHeight: .infinity, alignment: .top)
                         }
                         // Both columns end at the same line: the taller one (the game card) sets the height.
                         .fixedSize(horizontal: false, vertical: true)
