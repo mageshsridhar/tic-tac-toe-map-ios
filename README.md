@@ -31,4 +31,4 @@ xcodegen generate
 
 ## Web version
 
-A browser version of the same app lives in its own repository, [tic-tac-toe-map-web](https://github.com/mageshsridhar/tic-tac-toe-map-web), and you can play it at https://mageshsridhar.github.io/tic-tac-toe-map-web/.
+A browser version of the same app lives in its own repository, [tic-tac-toe-map](https://github.com/mageshsridhar/tic-tac-toe-map), and you can play it at https://mageshsridhar.github.io/tic-tac-toe-map/.
