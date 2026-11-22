@@ -12,6 +12,7 @@
 		62660AD07736BCC07CCCDF2A /* GamePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74538E185F60554E2A75853C /* GamePanel.swift */; };
 		946C6C5837E2A80FDEDC3413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858091631523B37502825DB6 /* Assets.xcassets */; };
 		A518A25BC6B305A5C863C4E4 /* TicTacToeMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EF8DB219217F96C188FE5 /* TicTacToeMapApp.swift */; };
+		A665AC088F8F6AD5249AFBCF /* TouchIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CF5609D4F1C979D2612FF8 /* TouchIndicator.swift */; };
 		ADB73769B229B166D1C73219 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5C94F7C4B1A1876D3C5DF2 /* GameModel.swift */; };
 		B449A708D14CE205991E8366 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D4A1E200EE4154A9DDB81 /* MapView.swift */; };
 		D4A9241D6CD67586BC836738 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C2C6F7CDC7422B394AC29 /* Game.swift */; };
@@ -23,6 +24,7 @@
 		309C2C6F7CDC7422B394AC29 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		309D33E98526DE1F5AD1E543 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		634A9439BDA1A621E9543545 /* TicTacToeMap.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TicTacToeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CF5609D4F1C979D2612FF8 /* TouchIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIndicator.swift; sourceTree = "<group>"; };
 		74538E185F60554E2A75853C /* GamePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePanel.swift; sourceTree = "<group>"; };
 		858091631523B37502825DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F5C94F7C4B1A1876D3C5DF2 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				92410395EB15FAE560444BD7 /* PixelArt.swift */,
 				309D33E98526DE1F5AD1E543 /* Theme.swift */,
 				213EF8DB219217F96C188FE5 /* TicTacToeMapApp.swift */,
+				71CF5609D4F1C979D2612FF8 /* TouchIndicator.swift */,
 			);
 			path = TicTacToeMap;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				1BE690F6272C86518BAF064F /* PixelArt.swift in Sources */,
 				4398D94733637405F1C85957 /* Theme.swift in Sources */,
 				A518A25BC6B305A5C863C4E4 /* TicTacToeMapApp.swift in Sources */,
+				A665AC088F8F6AD5249AFBCF /* TouchIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

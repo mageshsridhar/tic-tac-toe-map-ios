@@ -84,6 +84,8 @@ struct ContentView: View {
         .preferredColorScheme(isDark ? .dark : .light)
         // Light tap on each move, a success tap when a game is won or drawn.
         .sensoryFeedback(trigger: model.history) { old, new in
+            // Recording mode has no use for haptics, and waking an idle haptic engine can stall a frame.
+            guard !TouchIndicator.isRequested else { return nil }
             guard new.count > old.count, let last = new.last else { return nil }
             return last.winner != nil ? .success : .impact(weight: .light)
         }
@@ -101,7 +103,11 @@ struct ContentView: View {
                     .accessibilityHidden(true)
             }
         }
-        .onAppear { model.reduceMotion = reduceMotion }
+        .onAppear {
+            model.reduceMotion = reduceMotion
+            // Touch circles for screen recordings; only when launched with -ShowTouches YES.
+            DispatchQueue.main.async { TouchIndicator.installIfRequested() }
+        }
         .onChange(of: reduceMotion) { _, v in model.reduceMotion = v }
     }
 
